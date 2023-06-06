@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema-Darkon</title>
+
+    <!--Link al style css del documento-->
+    <link rel="stylesheet" href="./style.css">
+    <!--Link para usar libreria de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+<body>
+    <section class="fondo">
+        <div> <!--Encabezado registro, y paginas de información de la empresa-->
+            <header class="p-3 gradient-background">
+                <div class="container-fluid">
+                  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <div class="">
+                        <img src="./SisDarkonCSS/Imagenes/logo-darkon-ngo.png" alt="Logo-Darkon" class="border border-black logo-size">
+                    </div>
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-start align-items-center mb-md-0">  
+                      <li><a href="#" class="nav-link px-3 text-dark fs-1">SISTEMA DARKON</a></li>
+                      <li><a href="#" class="nav-link px-3 text-white">Inicio</a></li>
+                      <li><a href="#" class="nav-link px-3 text-white">Mision</a></li>
+                      <li><a href="#" class="nav-link px-3 text-white">Vision</a></li>
+                      <li><a href="#" class="nav-link px-3 text-white">Valores</a></li>
+                    </ul>
+            
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                      <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Buscar..." aria-label="Search">
+                    </form>
+            
+                    <div class="text-end">
+                      <button type="button" class="btn btn-outline-light me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person-fill margen" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                          </svg>Inicia sesion
+                        </button>
+                      <button type="button" class="btn btn-warning">Registrate</button>
+                    </div>
+                  </div>
+                </div>
+              </header>
+
+              <div id="bloque-espacio" class="bloque"></div>
+        </div>
+
+        <div class="container-fluid"> <!--Dos columnas de col-6 lado izquierdo de menus para el personal y carrusel de fotos lado derecho-->
+            <div class="row">
+                <!--Columna de menu dinamico para usuarios-->
+                <div class="col-lg-4  col-12">
+                    <div class="container mt-5 ms-5 justify-content-center ">
+                        <div class="list-group col-xl-8 col-lg-6 col-12">
+                            <a href="#" class="list-group-item list-group-item-action mb-4"><h2 class="text-center">MENU</h2></a>
+                          
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Ventas</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Producción</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Compras</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Recursos Humanos</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-info">Contaduría</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Sistemas</a>
+                          </div>
+                    </div>
+                </div>
+                <!--Columna de carrusel de fotos animado-->
+                <div class="col-lg-4 col-xl-4 col-12 mt-5 py-5 fondo-dos">
+                    <div class="container">
+                        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./SisDarkonCSS/Imagenes/pexels-andrea-piacquadio-3846508.jpg" class="d-block w-100" height="400px" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./SisDarkonCSS/Imagenes/pexels-fauxels-3184418.jpg" class="d-block w-100" alt="..." height="400px">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./SisDarkonCSS/Imagenes/pexels-monicore-134064.jpg" class="d-block w-100" alt="..." height="400px">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-12">
+                    <div class="container redondo">
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success mt-5 ms-5 p-4 text-center display-6">Chat...</a>
+                        <div class=" fondo-tres bg-light w-100 ms-5"><br/><ul><li>Escribe aqui en el chat con todo el equipo...</li></ul></div>
+                    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+</section>
+
+<!--Link para poder usar java scrip-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>
